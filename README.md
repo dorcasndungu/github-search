@@ -1,27 +1,41 @@
-# GithubSearch
+# My Portfolio
+#### This is the Inspire web application.
+#### By **Dorcas Mwihaki**
+## Description
+This is an application that enables users to view quotes,rate them and even add their own.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+**Author's information**
+
+l am a programmer currently studying at Moringa School.
+## Setup/Installation Requirements
+* Clone the repo :{git clone https://github.com/dorcasndungu/Inspire.git
+* You need to have Angular and node.js installed
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Live link
+https://dorcasndungu.github.io/Inspire/
+## BDD
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+| Input                                    |Ouput                                                                 |  
+|--------------------------                |----------------------------------------------------------------------| 
+| User clicks like  or dislike             | The total votes,upvotes and downvotes change independently           |
+| User Clicks Details                      | The details toggle                                                   |
+| User deletes quote                       |  Quote is spliced                                                    |
+| User types then leaves field empty       |  Is alerted                                                          |
+| User posts a quote                       | It appears on the list                                               |
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+    
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Known Bugs
+The highlight directive works well but through various ways it has not been successful in highlighting the most upvoted quote.
+## Technologies Used
+This project has been written in typescript and has utilized javascript,git and bootstrap.
+## Support and contact details
+You are free to contribute and make adjustments .Do not hesitate to reach out in case of any enquiries,my details are in my bio.
+### License
+This software is under the [MIT](LICENSE) license
+Copyright (c) {2021} 
