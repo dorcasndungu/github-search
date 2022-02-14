@@ -1,0 +1,56 @@
+<div class="errorFont">
+  <form>
+    <h1 class="text-center pt-3 text-info">Enter a username</h1>
+
+    <input type="text" class="form-control mx-4" [(ngModel)]="username" name="username" (keyup)="ngOnInit()" placeholder="Enter a username" />
+  </form>
+
+  <br>
+
+  <div class="container" *ngIf="user">
+    <div class="row">
+      <div class="col-md-6 text-center ms-auto">
+        <img [src]="user.avatar_url" [title]="user.name" />
+      </div>
+      <div class="col-md-6">
+        <span mb-2>Username: {{ user.login }}</span>
+
+        <ul class="list-group">
+          <li class="list-group-item"><b>Name: </b> {{ user.name }}</li>
+          <li class="list-group-item"><b>Location: </b> {{ user.location }}</li>
+          <li class="list-group-item">
+            <b>Created: </b> {{ user.created_at |date }}
+          </li>
+        </ul>
+        <div class="d-flex py-4">
+          <button class="btn mx-3 btn-info">
+            {{ user.followers }} followers
+          </button>
+          <button class="btn mx-3 btn-info">
+            {{ user.following }} Following
+          </button>
+          <button class="btn mx-3 btn-info">
+            {{ user.public_repos }} Public Repos
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <div >
+    <h2 class="text-center">Repositories</h2>
+
+    <div class="d-flex flex-wrap">
+      <div class="border col-md-4 border-info p-3" *ngFor="let repo of repos">
+        <h3>{{ repo.name }}</h3>
+        <p>Created: {{ repo.created_at |date }}</p>
+        <p>Language Used: {{ repo.language }}</p>
+        <p>{{ repo.description }}</p>
+        <button class="btn btn-info">
+          <a href="{{ repo.html_url }}" target="_blank">To gitHub</a>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
