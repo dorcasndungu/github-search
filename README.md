@@ -10,6 +10,11 @@ This is an application that enables users to search for github users,find their 
 
 - Users can access github repository by clicking 'to github'
 
+# Live link
+
+[ 🔗 DEMO:https://dorcasndungu.github.io/github-search](https://dorcasndungu.github.io/github-search/) 
+
+
 # Prerequisites
 You need the following to start working on github search app:
 

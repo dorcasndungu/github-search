@@ -7,8 +7,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class DataServiceService {
+  repo: string = '';
 
-  repoName: string = '';
 
   constructor(private http: HttpClient) { 
     console.log("service is now ready!");
@@ -21,12 +21,15 @@ export class DataServiceService {
   getUserRepos(){
     return this.http.get("https://api.github.com/users/"+environment.username +"/repos?client_id="+environment.clientId + "&client_secret=" + environment.clientSecret);
   }
-
-
-  updateProfile(username:string){
-    environment.username =username
+  searchrepos() {
+    return this.http.get('https://api.github.com/search/repositories?q=' + this.repo, ({
+      headers: new HttpHeaders({Authorization: `token ${environment.apikey}`})
+    }))
+  }
+  updateProfile(userName:string){
+    environment.username =userName
   }
   UpdateRepo(repoName:string) {
-    this.repoName = repoName;
+    this.repo = repoName;
   }
 }
