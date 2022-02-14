@@ -52,7 +52,7 @@ You are free to contribute and make adjustments .Do not hesitate to reach out in
 Dorcas Ndung'u
 
 **Author's information**
---
+
 I am a programmer currently studying at Moringa School.
 
 ### License
