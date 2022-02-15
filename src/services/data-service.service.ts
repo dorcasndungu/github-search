@@ -11,7 +11,6 @@ export class DataServiceService {
 
 
   constructor(private http: HttpClient) { 
-    console.log("service is now ready!");
     environment.username ='dorcasndungu';
   }
   getUserInfo(){

@@ -53,7 +53,7 @@ At the moment the project is working at its optimum.
 You are free to contribute and make adjustments .Do not hesitate to reach out in case of any enquiries,my details are in my bio.
 
 ## Author
----
+
 Dorcas Ndung'u
 
 **Author's information**
