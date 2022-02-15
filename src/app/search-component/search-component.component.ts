@@ -27,9 +27,6 @@ ngOnInit(){
     this.user = user;
   });
 
-  this.dataServiceService.getUserRepos().subscribe(repos => {
-    console.log(repos);
-    this.repos = repos;
-  })  	
+	
 }
 }

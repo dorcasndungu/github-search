@@ -1,3 +1,4 @@
+import { ReposViewComponent } from './repos-view/repos-view.component';
 import { LandingpageComponent } from './landingpage/landingpage.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -9,8 +10,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
 const routes: Routes = [
   {path:'landingpage',component:LandingpageComponent},
   {path:'search-component',component:SearchComponentComponent},
+  {path:'repos-view',component:ReposViewComponent},
   { path: '', redirectTo:"/landingpage", pathMatch:"full"},
   { path:'**', component:NotFoundComponent},
+  
 ];
 
 @NgModule({
